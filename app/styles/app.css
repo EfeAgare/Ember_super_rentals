@@ -1,10 +1,4 @@
-@import url(
-  https://fonts.googleapis.com/css?family=Lato:300,
-  300italic,
-  400,
-  700,
-  700italic
-);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
 
 /**
  * Base Elements
@@ -27,13 +21,11 @@ div,
 span,
 a,
 button {
-  font-family: "Lato", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica,
-    Arial, sans-serif;
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
-body,
-html {
+body, html {
   height: 100%;
   background: #f3f3f3;
 }
@@ -85,9 +77,9 @@ p {
 
 .about-content {
   max-width: 800px;
-  margin-top: 50px;
-  margin: 50px auto;
-  text-align: center;
+    margin-top: 50px;
+    margin: 50px auto;
+    text-align: center;
 }
 /**
  * Top Navigation
@@ -96,7 +88,7 @@ p {
 .menu {
   height: 4em;
   background-color: #677ae4;
-  background-color: #05526a;
+  background-color: #05526A;
   background-color: #e46855;
 }
 
@@ -212,16 +204,15 @@ p {
 .jumbo {
   padding: 50px;
   /* background: #f6f6f6; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/pixel-house.jpeg);
-  /* Set a specific height */
-  height: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/pixel-house.jpeg);
+    /* Set a specific height */
+    height: 40%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   /* background: url(../assets/images/pixel-house.jpeg); */
 }
 
@@ -303,8 +294,7 @@ p {
   transition: opacity 0.25s ease-in-out;
 }
 
-.rental button.image:focus:after,
-.rental button.image:hover:after {
+.rental button.image:focus:after, .rental button.image:hover:after {
   opacity: 0.1;
 }
 
@@ -423,8 +413,7 @@ p {
 }
 
 @media only screen and (max-width: 919px) {
-  .rental.detailed .image,
-  .rental.detailed .image.large {
+  .rental.detailed .image, .rental.detailed .image.large {
     margin: 30px 25px 25px 25px;
     flex-basis: 100%;
     cursor: default;
@@ -477,6 +466,7 @@ p {
 }
 
 .hero-text {
+
   text-align: center;
   position: absolute;
   top: 50%;
@@ -485,13 +475,10 @@ p {
   color: white;
 }
 
-.screen-reader {
+.screen-reader{
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
