@@ -89,7 +89,8 @@ p {
   height: 4em;
   background-color: #677ae4;
   background-color: #05526A;
-  background-color: #e46855;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu h1 {
@@ -120,6 +121,8 @@ p {
 
 .menu .links {
   padding: 0 21px;
+  display: flex;
+  align-items: center;
 }
 
 .menu .links a {
