@@ -1,11 +1,10 @@
-import Model, { attr } from "@ember-data/model";
+import Model, { attr } from '@ember-data/model';
 
 const COMMUNITY_CATEGORIES = [
   'Condo',
   'Townhouse',
   'Apartment'
 ];
-
 
 export default class RentalModel extends Model {
   @attr title;
@@ -19,10 +18,9 @@ export default class RentalModel extends Model {
 
   get type() {
     if (COMMUNITY_CATEGORIES.includes(this.category)) {
-      return "Community";
+      return 'Community';
     } else {
-      return "Standalone";
+      return 'Standalone';
     }
   }
-
 }

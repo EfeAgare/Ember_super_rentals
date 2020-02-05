@@ -22,7 +22,7 @@ export default class RentalRoute extends Route {
   // }
 
 
-  // using model
+  // using model i.e ember data store
   @service store;
 
   async model(params) {
